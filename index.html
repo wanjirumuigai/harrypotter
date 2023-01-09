@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Harry Potter</title>
+</head>
+<body>
+    <div class="container-nav">
+        <h1>Harry Potter Characters</h1>
+        <div id="header">
+
+        </div>
+        
+    </div>
+    <div class="search">
+        <form class="search-bar">
+            <input type="text" placeholder="search character" name="q">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>        
+    </div>
+
+    <div class="container">
+        <div class="character-container">
+           <div class="box">
+           <div class="card">
+            <h2>Top 20 Characters</h2>
+                   <ol id="list">
+                   </ol>
+           </div>
+           </div>
+           <div class="box">
+           <div class="card">
+               
+               <h2>Name & Photo</h2>
+               <img 
+               id="image"
+               src="" alt="" width="230" height="260">
+                   <p id="character-name">
+                      Name goes here 
+                   </p>
+                   <i id='likes' class="fa-solid fa-heart"></i>                   
+                   <p id="likes-count"></p>
+           </div>
+           </div>
+           <div class="box">
+           <div class="card">
+               <h2>Character Info</h2><br>
+               <div class="par">
+                <p id="name">Name</p>
+                <p id="house">House</p>
+                <p id="birthday">DoB</p>
+                <p id="ancestry">ancestry</p>
+                <p id="status">status</p>
+                <p id="species">species</p>                
+                <p id="actor">actor</p>
+               </div>
+               </div>
+           </div>
+        </div>
+        <div id="comments">
+            <h4>Comments</h4>
+            <ul id="user-comments">
+                <li>User Comments Here</li>
+            </ul>
+            <h4>Post Comments Here</h4>
+        <form id="comments-form" action="">
+            
+            <textarea id="comments-area" cols="40" rows="10"></textarea>
+            <button type="submit" id="btn">Submit Comment</button>
+        </form>   
+        </div>
+       </div>
+       
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
