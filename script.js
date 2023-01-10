@@ -18,6 +18,26 @@ document.getElementById('birthday').innerHTML =  `DOB: ${characterObj.dateOfBirt
 document.getElementById('ancestry').innerHTML = `Ancestry: ${characterObj.ancestry}`
 document.getElementById('species').innerHTML = `Species: ${characterObj.species}`
 
+let house = characterObj.house
+let body = document.querySelector('body')
+let nav = document.querySelector('.container-nav')
+if (house === 'Gryffindor') {
+    body.style.backgroundColor = '#740001'
+    nav.style.backgroundColor = '#D3A625'
+    }
+else if (house==='Slytherin') {
+    body.style.backgroundColor = '#1A472A'
+    nav.style.backgroundColor = '#5D5D5D'
+}
+else if (house==='Hufflepuff') {
+    body.style.backgroundColor = '#000'
+    nav.style.backgroundColor = '#FFD800'
+}
+else if (house==='Ravenclaw') {
+    body.style.backgroundColor = '#0E1A40'
+    nav.style.backgroundColor = '#946B2D'
+}
+
 
 let status = characterObj.alive
 if(status == true) {
@@ -50,27 +70,9 @@ function renderCharacters(characters) {
 }
 }
 let countArray = []
-    let count=0
-
-function showLikes() {
     
-  
-let likes = document.getElementById('likes')
 
 
-likes.addEventListener('click', () => {
-   
-    
-    count = count + 1
-    countArray.push(1)
-    
-    document.querySelector('#likes').classList.add('activated-heart')
-    
-    
-document.querySelector('#likes-count').textContent = `${countArray.length} likes`
-
-})
-}
 function checkLikes() {
     if(!(countArray.length==0)) {
         countArray = []
@@ -79,8 +81,28 @@ function checkLikes() {
         document.querySelector('#likes').classList.remove('activated-heart')
    
 } else if(countArray.length == 0) {
+    count=[]
+    document.querySelector('#likes-count').textContent = `${countArray.length} likes`
 showLikes()
 } }
+function showLikes() {
+    countArray = []
+    
+  
+let likes = document.getElementById('likes')
+
+
+likes.addEventListener('click', () => {
+    countArray.push(1)
+   
+    document.querySelector('#likes').classList.add('activated-heart')
+    
+    
+document.querySelector('#likes-count').textContent = `${countArray.length} likes`
+
+
+})
+}
 
 let form = document.querySelector('#comments-form')
 let comment = document.querySelector('#comments-area')
