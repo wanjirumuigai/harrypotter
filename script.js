@@ -1,3 +1,4 @@
+
 fetch('https://hp-api.onrender.com/api/characters')
 .then(res => res.json())
 .then(data => {
