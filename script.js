@@ -120,7 +120,6 @@ form.addEventListener('submit', (e) => {
     let toAdd = comment.value.toUpperCase()
     li.innerHTML = toAdd
     addContent(toAdd)
-    
     form.reset()
 }
 
