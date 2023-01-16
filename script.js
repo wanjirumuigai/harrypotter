@@ -7,7 +7,6 @@ fetch('https://hp-api.onrender.com/api/characters')
     displayFirstItem(data[0])
     renderCharacters(data)
     
-
 })
 .catch(error => console.log('Error: ', error.message))
 // function to display the first charater on page load
@@ -66,16 +65,15 @@ function renderCharacters(characters) {
     li.innerHTML = characters[i].name
     list.appendChild(li)
     li.addEventListener('click',() => {
-        
+                
         displayFirstItem(characters[i])
+             
    
 })
 }
 }
 let countArray = []
-    
-
-
+   
 function checkLikes() {
     if(!(countArray.length===0)) {
         countArray = []
@@ -84,31 +82,32 @@ function checkLikes() {
         document.querySelector('#likes').classList.remove('activated-heart')
         
 } else if(countArray.length === 0) {
-    count=[]
+    countArray=[]
     document.querySelector('#likes-count').textContent = `${countArray.length} likes`
     
     
 showLikes()
 } }
 function showLikes() {
-    countArray = []
     
+    countArray = []
   
 let likes = document.getElementById('likes')
+console.log(countArray)
 
 
 likes.addEventListener('click', () => {
     countArray.push(1)
-   
-    document.querySelector('#likes').classList.add('activated-heart')
-    
-    document.querySelector('#likes-count').textContent = `${countArray.length} likes`
-
 console.log(countArray)
 
-})
+document.querySelector('#likes').classList.add('activated-heart')
 
+document.querySelector('#likes-count').textContent = `${countArray.length} likes`
 }
+)
+}
+
+
 
 // add comments
 
