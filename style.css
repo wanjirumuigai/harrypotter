@@ -7,21 +7,23 @@ body {
     color: white;
     background-color: rgb(212, 187, 178);
   }
-.container-nav {
+ #navbar {
+    overflow: hidden;
+    background-color: #333;
     
-    background-color: coral;
-  
-   }
+  }
 
-.container-nav h1 {
-  margin: 60px;
+  #navbar h1 {
+    float: left;   
+    color: #f2f2f2;
+   margin: 20px;
+    
 }
 .character-container {
     display: flex;
     flex: 1;
     flex-direction: row;
     justify-content: center;
-    
     gap: 3rem;
     height: auto;
     color: black;
@@ -32,7 +34,7 @@ body {
     height: 510px;
     width: 400px;
     background-color: bisque;
-    margin-top: 30px;
+    border-radius: 5px;
   
       
   }
@@ -91,6 +93,9 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
+    
+    
   }
   .search-bar {
     width: 100%;
@@ -119,4 +124,13 @@ textarea {
   }
 .filtered {
   display: none !important;
+}
+.heading {
+overflow: hidden;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
 }

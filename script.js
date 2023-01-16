@@ -1,4 +1,6 @@
 
+let nav = document.querySelector('#navbar')
+//fetch data from the api
 fetch('https://hp-api.onrender.com/api/characters')
 .then(res => res.json())
 .then(data => {
@@ -8,7 +10,7 @@ fetch('https://hp-api.onrender.com/api/characters')
 
 })
 .catch(error => console.log('Error: ', error.message))
-
+// function to display the first charater on page load
 function displayFirstItem(characterObj) {
 document.getElementById('image').src = characterObj.image
 document.getElementById('character-name').innerHTML = ` ${characterObj.name}`
@@ -21,7 +23,7 @@ document.getElementById('species').innerHTML = `Species: ${characterObj.species}
 
 let house = characterObj.house
 let body = document.querySelector('body')
-let nav = document.querySelector('.container-nav')
+
 if (house === 'Gryffindor') {
     body.style.backgroundColor = '#740001'
     nav.style.backgroundColor = '#D3A625'
@@ -51,8 +53,10 @@ document.getElementById('status').innerHTML = `Status: ${status}`
 checkLikes()
 
 }
-
+// list the top 20 characters
 function renderCharacters(characters) {
+
+    
     let list = document.getElementById('list')
   
     for(let i=0; i<20;i++) {
@@ -62,8 +66,6 @@ function renderCharacters(characters) {
     li.innerHTML = characters[i].name
     list.appendChild(li)
     li.addEventListener('click',() => {
-        //console.log(characters[i])
-        
         
         displayFirstItem(characters[i])
    
@@ -75,15 +77,17 @@ let countArray = []
 
 
 function checkLikes() {
-    if(!(countArray.length==0)) {
+    if(!(countArray.length===0)) {
         countArray = []
         
         document.querySelector('#likes-count').textContent = `${countArray.length} likes`
         document.querySelector('#likes').classList.remove('activated-heart')
-   
-} else if(countArray.length == 0) {
+        
+} else if(countArray.length === 0) {
     count=[]
     document.querySelector('#likes-count').textContent = `${countArray.length} likes`
+    
+    
 showLikes()
 } }
 function showLikes() {
@@ -98,12 +102,15 @@ likes.addEventListener('click', () => {
    
     document.querySelector('#likes').classList.add('activated-heart')
     
-    
-document.querySelector('#likes-count').textContent = `${countArray.length} likes`
+    document.querySelector('#likes-count').textContent = `${countArray.length} likes`
 
+console.log(countArray)
 
 })
+
 }
+
+// add comments
 
 let form = document.querySelector('#comments-form')
 let comment = document.querySelector('#comments-area')
@@ -143,41 +150,17 @@ postedComments.addEventListener('click', function(e) {
      
   
    })
-
-// function getNames(namesObj) {
-//     let search = document.querySelector('.search-bar input')
-//     let namesArray=[]
-//     namesObj.forEach(element => {
-//             namesArray.push(element.name) 
-//     });
-    
-// search.addEventListener('keyup', () => {
-
-//    let matchingArrray=[]
-//     const term = search.value.trim()
-//     namesArray.filter((charName) => {
-       
-//         if(charName.includes(term)) {
-//             matchingArrray.push(charName)
-//         }
-//     })
-//     createFoundChar(matchingArrray)
-// })
-
-// }
-// document.getElementById('search-results').innerHTML = ''
-// function createFoundChar(foundArray) {
-//     let li = document.createElement('li')
-//     for(let i=0; i<foundArray.length; i++) {
-//         li.textContent = foundArray[i]
-//         let ul = document.getElementById('search-results')
-//    ul.appendChild(li)
-// //    li.addEventListener('click', () => {
-// //     displayFirstItem(foundArray)
-// //    })
-//     }
    
-// }
+let sticky = nav.offsetTop
+window.onscroll = function() {
+    if(window.pageYOffset >= sticky) {
+        
+        nav.classList.add('sticky')
+    } else {
+        nav.classList.remove('sticky')
+        
+    }
+}
 
 
 
