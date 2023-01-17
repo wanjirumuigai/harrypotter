@@ -1,7 +1,7 @@
 
 let nav = document.querySelector('#navbar')
 //fetch data from the api
-fetch('https://api.npoint.io/691a24ca2c1fc0e30ed1')
+fetch('https://hp-api.onrender.com/api/characters')
 .then(res => res.json())
 .then(data => {
     displayFirstItem(data[0])
