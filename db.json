@@ -3,7 +3,7 @@
     {
       "id": "9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8",
       "name": "Harry Potter",
-      "likes": 204,
+      "likes": 27,
       "species": "human",
       "gender": "male",
       "house": "Gryffindor",
@@ -23,9 +23,7 @@
       "hogwartsStaff": false,
       "actor": "Daniel Radcliffe",
       "comments": [
-        "I LOVE HIM",
-        "HE IS SO GOOD",
-        "WELL DONE"
+        "GOOD"
       ],
       "alive": true,
       "image": "https://ik.imagekit.io/hpapi/harry.jpg",
@@ -37,7 +35,7 @@
     {
       "id": "4c7e6819-a91a-45b2-a454-f931e4a7cce3",
       "name": "Hermione Granger",
-      "likes": 0,
+      "likes": 23,
       "species": "human",
       "gender": "female",
       "house": "Gryffindor",
@@ -63,7 +61,7 @@
     {
       "id": "c3b1f9a5-b87b-48bf-b00d-95b093ea6390",
       "name": "Ron Weasley",
-      "likes": 0,
+      "likes": 11,
       "species": "human",
       "gender": "male",
       "house": "Gryffindor",
@@ -89,7 +87,7 @@
     {
       "id": "af95bd8a-dfae-45bb-bc69-533860d34129",
       "name": "Draco Malfoy",
-      "likes": 0,
+      "likes": 2,
       "species": "human",
       "gender": "male",
       "house": "Slytherin",
@@ -115,7 +113,7 @@
     {
       "id": "ca3827f0-375a-4891-aaa5-f5e8a5bad225",
       "name": "Minerva McGonagall",
-      "likes": 0,
+      "likes": 5,
       "species": "human",
       "gender": "female",
       "house": "Gryffindor",
@@ -141,7 +139,7 @@
     {
       "id": "d5c4daa3-c726-426a-aa98-fb40f3fba816",
       "name": "Cedric Diggory",
-      "likes": 0,
+      "likes": 1,
       "species": "human",
       "gender": "male",
       "house": "Hufflepuff",
@@ -167,7 +165,7 @@
     {
       "id": "8f9aa40b-5d7c-441e-ad32-4564ecda3b70",
       "name": "Cho Chang",
-      "likes": 0,
+      "likes": 2,
       "species": "human",
       "gender": "female",
       "house": "Ravenclaw",
@@ -193,9 +191,7 @@
     {
       "id": "3569d265-bd27-44d8-88e8-82fb0a848374",
       "name": "Severus Snape",
-      "likes": [
-        "Half-Blood Prince"
-      ],
+      "likes": 0,
       "species": "human",
       "gender": "male",
       "house": "Slytherin",
@@ -250,7 +246,7 @@
     {
       "id": "3db6dc51-b461-4fa4-a6e4-b1ff352221c5",
       "name": "Neville Longbottom",
-      "likes": 0,
+      "likes": 2,
       "species": "human",
       "gender": "male",
       "house": "Gryffindor",
@@ -276,7 +272,7 @@
     {
       "id": "861c4cde-2f0f-4796-8d8f-9492e74b2573",
       "name": "Luna Lovegood",
-      "likes": 0,
+      "likes": 1,
       "species": "human",
       "gender": "female",
       "house": "Ravenclaw",
@@ -302,7 +298,7 @@
     {
       "id": "1cd6dc64-01a9-4379-9cfd-1a7167ba1bb1",
       "name": "Ginny Weasley",
-      "likes": 0,
+      "likes": 2,
       "species": "human",
       "gender": "female",
       "house": "Gryffindor",
@@ -357,7 +353,7 @@
     {
       "id": "b8f9095b-9de6-4d7d-83e0-4391af8f22e4",
       "name": "Remus Lupin",
-      "likes": 0,
+      "likes": 1,
       "species": "werewolf",
       "gender": "male",
       "house": "Gryffindor",
@@ -409,7 +405,7 @@
     {
       "id": "6afb1960-febd-418d-b604-e50c1b59459b",
       "name": "Bellatrix Lestrange",
-      "likes": 0,
+      "likes": 1,
       "species": "human",
       "gender": "female",
       "house": "Slytherin",
@@ -487,7 +483,7 @@
     {
       "id": "106cf68d-a86a-415e-ad75-6ad9a4ae24e4",
       "name": "Kingsley Shacklebolt",
-      "likes": 0,
+      "likes": 1,
       "species": "human",
       "gender": "male",
       "house": "",
@@ -513,7 +509,7 @@
     {
       "id": "d58e7249-19d1-40bd-a43f-1da0497fe8aa",
       "name": "Dolores Umbridge",
-      "likes": 0,
+      "likes": 2,
       "species": "human",
       "gender": "female",
       "house": "Slytherin",
