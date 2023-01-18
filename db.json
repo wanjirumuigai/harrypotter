@@ -23,7 +23,9 @@
       "hogwartsStaff": false,
       "actor": "Daniel Radcliffe",
       "comments": [
-        "GOOD"
+        "I LOVE HIM",
+        "HE IS SO GOOD",
+        "WELL DONE"
       ],
       "alive": true,
       "image": "https://ik.imagekit.io/hpapi/harry.jpg",
@@ -54,7 +56,9 @@
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Emma Watson",
-      "comments": [],
+      "comments": [
+        "BOOK WORM"
+      ],
       "alive": true,
       "image": "https://ik.imagekit.io/hpapi/hermione.jpeg"
     },
@@ -450,7 +454,9 @@
       "hogwartsStudent": false,
       "hogwartsStaff": false,
       "actor": "Ralph Fiennes",
-      "comments": [],
+      "comments": [
+        "EVIL INCARNATE!!"
+      ],
       "alive": false,
       "image": "https://ik.imagekit.io/hpapi/voldemort.jpg"
     },
