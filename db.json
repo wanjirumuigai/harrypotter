@@ -3,7 +3,7 @@
     {
       "id": "9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8",
       "name": "Harry Potter",
-      "likes": 221,
+      "likes": 222,
       "species": "human",
       "gender": "male",
       "house": "Gryffindor",
@@ -64,7 +64,7 @@
     {
       "id": "c3b1f9a5-b87b-48bf-b00d-95b093ea6390",
       "name": "Ron Weasley",
-      "likes": 3,
+      "likes": 4,
       "species": "human",
       "gender": "male",
       "house": "Gryffindor",
