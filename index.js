@@ -2,17 +2,14 @@ let nav = document.querySelector("#navbar");
 let url = "http://localhost:3000/characters";
 //fetch data from the api
 fetch(url)
-.then(res => res.json())
-.then(data => {
-    displayFirstItem(data[0])
-    renderCharacters(data)
-    showLikes(data[0])
-    showComments(data[0]) 
-    
-    
-    
-})
-.catch(error => console.log('Error: ', error.message))
+	.then((res) => res.json())
+	.then((data) => {
+		displayFirstItem(data[0]);
+		renderCharacters(data);
+		showLikes(data[0]);
+		showComments(data[0].comments);
+	})
+	.catch((error) => console.log("Error: ", error.message));
 // function to display the first charater on page load
 function displayFirstItem(characterObj) {
 	document.getElementById("image").src = characterObj.image;
@@ -43,65 +40,57 @@ function displayFirstItem(characterObj) {
 		nav.style.backgroundColor = "#946B2D";
 	}
 
-
-let status = characterObj.alive
-if(status == true) {
-    status = 'Alive'
-} else {
-    status = 'Dead'
-}
-document.getElementById('status').innerHTML = `Status: ${status}`
-showComments(characterObj.comments)
+	let status = characterObj.alive;
+	if (status == true) {
+		status = "Alive";
+	} else {
+		status = "Dead";
+	}
+	document.getElementById("status").innerHTML = `Status: ${status}`;
+	showComments(characterObj.comments);
 }
 // list the top 20 characters
 function renderCharacters(characters) {
+	let list = document.getElementById("list");
 
-    
-    let list = document.getElementById('list')
-  
-    for(let i=0; i<20;i++) {
-
-   let li = document.createElement('li')
-   li.dataset.id = i + 1
-    li.innerHTML = characters[i].name
-    list.appendChild(li)
-    li.addEventListener('click',() => {
-                
-        displayFirstItem(characters[i])
-        showLikes(characters[i]) 
-        showComments(characters[i].comments) 
-
-   
-})
-}
+	for (let i = 0; i < 20; i++) {
+		let li = document.createElement("li");
+		// li.dataset.id = i + 1;
+		li.innerHTML = characters[i].name;
+		list.appendChild(li);
+		li.addEventListener("click", () => {
+			displayFirstItem(characters[i]);
+			showLikes(characters[i]);
+			showComments(characters[i].comments);
+		});
+	}
 }
 
-function showLikes(characterObj){
- let heartIcon = document.getElementById('likes')   
-let count = characterObj.likes 
-let likes = document.getElementById('likes-count')
-let characterId = document.getElementById('name').dataset.id
-likes.innerHTML = `${count} likes`
-if(count>0) {
-    heartIcon.classList.add('activated-heart')
-} else {
-    heartIcon.classList.remove('activated-heart')
-}
-heartIcon.addEventListener('click', () => {
-    count +=1
-    fetch(`${url}/${characterId}`, {
-        method: 'PATCH',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            likes: count
-        })
-    })
-    .then(res => res.json())
-    .then(data => data)
-    
-})
+function showLikes(characterObj) {
+	let heartIcon = document.getElementById("likes");
+	let count = characterObj.likes;
+	let likes = document.getElementById("likes-count");
+	let characterId = document.getElementById("name").dataset.id;
+	likes.innerHTML = `${count} likes`;
+	if (count > 0) {
+		heartIcon.classList.add("activated-heart");
+	} else {
+		heartIcon.classList.remove("activated-heart");
+	}
+	heartIcon.addEventListener("click", () => {
+		count += 1;
+		fetch(`${url}/${characterId}`, {
+			method: "PATCH",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				likes: count,
+			}),
+		})
+			.then((res) => res.json())
+			.then((data) => data);
+	});
 }
 
 // add comments
@@ -116,7 +105,6 @@ postedComments.innerHTML = "";
 function getComments() {
 	let comment = document.querySelector("#comments-area");
 	let retrievedComments;
-    comment.removeChildren()
 
 	let characterId = document.getElementById("name").dataset.id;
 
@@ -145,7 +133,6 @@ function getComments() {
 	form.reset();
 }
 
-//show comments
 //show comments
 function showComments(comments) {
 	// document.getElementById('user-comments').innerHTML=''
