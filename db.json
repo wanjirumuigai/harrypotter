@@ -3,7 +3,7 @@
     {
       "id": "9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8",
       "name": "Harry Potter",
-      "likes": 31,
+      "likes": 221,
       "species": "human",
       "gender": "male",
       "house": "Gryffindor",
@@ -25,7 +25,8 @@
       "comments": [
         "I LOVE HIM",
         "HE IS SO GOOD",
-        "I LIKE HIM"
+        "GOOD",
+        "PERFECT"
       ],
       "alive": true,
       "image": "https://ik.imagekit.io/hpapi/harry.jpg",
@@ -37,7 +38,7 @@
     {
       "id": "4c7e6819-a91a-45b2-a454-f931e4a7cce3",
       "name": "Hermione Granger",
-      "likes": 25,
+      "likes": 12,
       "species": "human",
       "gender": "female",
       "house": "Gryffindor",
@@ -63,7 +64,7 @@
     {
       "id": "c3b1f9a5-b87b-48bf-b00d-95b093ea6390",
       "name": "Ron Weasley",
-      "likes": 11,
+      "likes": 3,
       "species": "human",
       "gender": "male",
       "house": "Gryffindor",
@@ -141,7 +142,7 @@
     {
       "id": "d5c4daa3-c726-426a-aa98-fb40f3fba816",
       "name": "Cedric Diggory",
-      "likes": 1,
+      "likes": 2,
       "species": "human",
       "gender": "male",
       "house": "Hufflepuff",
@@ -512,7 +513,7 @@
     {
       "id": "d58e7249-19d1-40bd-a43f-1da0497fe8aa",
       "name": "Dolores Umbridge",
-      "likes": 4,
+      "likes": 7,
       "species": "human",
       "gender": "female",
       "house": "Slytherin",
@@ -531,7 +532,9 @@
       "hogwartsStudent": false,
       "hogwartsStaff": true,
       "actor": "Imelda Staunton",
-      "comments": [],
+      "comments": [
+        "HALF-BLOOD WITCH"
+      ],
       "alive": true,
       "image": "https://ik.imagekit.io/hpapi/umbridge.jpg"
     },
