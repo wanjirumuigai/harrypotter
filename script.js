@@ -7,6 +7,10 @@ fetch(url)
 .then(data => {
     displayFirstItem(data[0])
     renderCharacters(data)
+    showLikes(data[0])
+    showComments(data[0]) 
+    
+    
     
 })
 .catch(error => console.log('Error: ', error.message))
@@ -51,10 +55,7 @@ if(status == true) {
     status = 'Dead'
 }
 document.getElementById('status').innerHTML = `Status: ${status}`
-
-  showComments(characterObj.comments)  
-checkLikes()
-
+showComments(characterObj.comments)
 }
 // list the top 20 characters
 function renderCharacters(characters) {
@@ -71,43 +72,41 @@ function renderCharacters(characters) {
     li.addEventListener('click',() => {
                 
         displayFirstItem(characters[i])
-             
+        showLikes(characters[i]) 
+        showComments(characters[i].comments) 
+
    
 })
 }
 }
-let countArray = []
-   
-function checkLikes() {
-    if(!(countArray.length===0)) {
-        countArray = []
-        
-        document.querySelector('#likes-count').textContent = `${countArray.length} likes`
-        document.querySelector('#likes').classList.remove('activated-heart')
-        
-} else if(countArray.length === 0) {
-    countArray=[]
-    document.querySelector('#likes-count').textContent = `${countArray.length} likes`
-    
-    
-showLikes()
-} }
-function showLikes() {
-    
-    countArray = []
-  
-let likes = document.getElementById('likes')
 
-likes.addEventListener('click', () => {
-    countArray.push(1)
-document.querySelector('#likes').classList.add('activated-heart')
-
-document.querySelector('#likes-count').textContent = `${countArray.length} likes`
+function showLikes(characterObj){
+ let heartIcon = document.getElementById('likes')   
+let count = characterObj.likes 
+let likes = document.getElementById('likes-count')
+let characterId = document.getElementById('name').dataset.id
+likes.innerHTML = `${count} likes`
+if(count>0) {
+    heartIcon.classList.add('activated-heart')
+} else {
+    heartIcon.classList.remove('activated-heart')
 }
-)
+heartIcon.addEventListener('click', () => {
+    count +=1
+    fetch(`${url}/${characterId}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            likes: count
+        })
+    })
+    .then(res => res.json())
+    .then(data => data)
+    
+})
 }
-
-
 
 // add comments
 let form = document.querySelector('#comments-form')
@@ -117,7 +116,7 @@ form.addEventListener('submit', (e) => {
 })
 let postedComments = document.getElementById('user-comments')
 postedComments.innerHTML=''
-//get an array of comments posted
+//get an array of comments posted and update
 function getComments() {
  
 let comment = document.querySelector('#comments-area')
@@ -151,22 +150,68 @@ form.reset()
 
 //show comments
 function showComments(comments) {
-        document.getElementById('user-comments').innerHTML=''
+       // document.getElementById('user-comments').innerHTML=''
+  
      for (let i=0; i<comments.length; i++) {
         let li = document.createElement('li')
-        li.innerHTML = comments[i]
+        li.innerHTML = `${comments[i]} <span><i class="fa-regular fa-trash-can"></i></span>`
         let list = document.querySelector('#user-comments')
         list.appendChild(li)
+        list.addEventListener('click', (e) => {
+           deleteComment(e)
+        })
+        
+        
       }
    }
 //delete comments
-postedComments.addEventListener('click', function(e) {
-    this.removeChild(e.target);
-  });
-  let list = document.querySelector('#list')
-  let search = document.querySelector('.search-bar input')
+function deleteComment(e) {
+    e.preventDefault()
+    let toDelete = e.target.parentNode.parentNode.innerText
+    
+    let characterId = document.getElementById('name').dataset.id
+    
+    fetch(`${url}/${characterId}`)
+    .then(res => res.json())
+    .then(data => {
+        let retrievedComments = data.comments
+        let i=0;
+        while(i<retrievedComments.length) {
+            
+            if(retrievedComments[i].toLowerCase().trim() == toDelete.toLowerCase().trim()) {
+                retrievedComments.splice(i,1)
+                
+                
+            } else {
+                i++;
+            }
+           
+        }
+    fetch(`${url}/${characterId}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            comments: retrievedComments
+        })    
+    })
+    .then(res => res.json())
+    .then(data => data
+        
+    )
+    showComments(retrievedComments)
+        
+    })
+    
+}
+
+
   
   //search button
+  let list = document.querySelector('#list')
+  let search = document.querySelector('.search-bar input')
   search.addEventListener('keyup', () => {
   
       const term = search.value.trim().toLowerCase()

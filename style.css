@@ -70,6 +70,7 @@ form {
     cursor: pointer;
   }
 #comments ul li {
+  
    list-style: none;
    background-color:bisque;
   border-radius: 5px;
@@ -77,6 +78,8 @@ form {
   margin-bottom: 20px;
   width: 300px;
   color: black;
+  
+  
   
 }
 
@@ -133,5 +136,10 @@ overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
+  
+}
+span {
+  margin: 90%;
+  cursor: pointer;
   
 }
