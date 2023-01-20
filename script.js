@@ -1,5 +1,5 @@
 let nav = document.querySelector("#navbar");
-let url = "https://jsonkeeper.com/b/GA7N";
+let url = "https://my-json-server.typicode.com/wanjirumuigai/harrypotter/characters";
 //fetch data from the api
 fetch(url)
 	.then((res) => res.json())
