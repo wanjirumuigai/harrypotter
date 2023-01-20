@@ -18,8 +18,8 @@ function displayFirstItem(characterObj) {
 	document.getElementById("name").innerHTML = `Name: ${characterObj.name}`;
 	document.getElementById("actor").innerHTML = `Actor Name: ${characterObj.actor}`;
 	document.getElementById("house").innerHTML = `House: ${characterObj.house}`;
-	document.getElementById("birthday").innerHTML = `DOB: ${characterObj.dateOfBirth}`;
-	document.getElementById("ancestry").innerHTML = `Ancestry: ${characterObj.ancestry}`;
+	document.getElementById("birthday").innerHTML = `DOB: ${characterObj.dateOfBirth}`.trim();
+	document.getElementById("ancestry").innerHTML = `Ancestry: ${characterObj.ancestry}`.trim();
 	document.getElementById("species").innerHTML = `Species: ${characterObj.species}`;
 	document.getElementById("name").dataset.id = characterObj.id;
 	let id = document.getElementById("name").dataset.id;
