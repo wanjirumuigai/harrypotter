@@ -1,5 +1,6 @@
+
+let url = "https://my-json-server.typicode.com/wanjirumuigai/harrypotter/characters";
 let nav = document.querySelector("#navbar");
-let url = "http://localhost:3000/characters";
 //fetch data from the api
 fetch(url)
 	.then((res) => res.json())
