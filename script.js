@@ -1,5 +1,6 @@
-let nav = document.querySelector("#navbar");
+
 let url = "https://my-json-server.typicode.com/wanjirumuigai/harrypotter/characters";
+let nav = document.querySelector("#navbar");
 //fetch data from the api
 fetch(url)
 	.then((res) => res.json())
