@@ -3,7 +3,7 @@
     {
       "id": "9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8",
       "name": "Harry Potter",
-      "likes": 221,
+      "likes": 222,
       "species": "human",
       "gender": "male",
       "house": "Gryffindor",
@@ -25,7 +25,6 @@
       "comments": [
         "I LOVE HIM",
         "HE IS SO GOOD",
-        "GOOD",
         "PERFECT"
       ],
       "alive": true,
@@ -38,7 +37,7 @@
     {
       "id": "4c7e6819-a91a-45b2-a454-f931e4a7cce3",
       "name": "Hermione Granger",
-      "likes": 14,
+      "likes": 17,
       "species": "human",
       "gender": "female",
       "house": "Gryffindor",
@@ -433,7 +432,7 @@
     {
       "id": "efa802c8-ae18-4ae1-a524-49df21d05939",
       "name": "Lord Voldemort",
-      "likes": 1,
+      "likes": 2,
       "species": "human",
       "gender": "male",
       "house": "Slytherin",
@@ -453,7 +452,8 @@
       "hogwartsStaff": false,
       "actor": "Ralph Fiennes",
       "comments": [
-        "EVIL INCARNATE!!"
+        "EVIL INCARNATE!!",
+        "HE'S SCARY"
       ],
       "alive": false,
       "image": "https://ik.imagekit.io/hpapi/voldemort.jpg"
@@ -513,7 +513,7 @@
     {
       "id": "d58e7249-19d1-40bd-a43f-1da0497fe8aa",
       "name": "Dolores Umbridge",
-      "likes": 9,
+      "likes": 11,
       "species": "human",
       "gender": "female",
       "house": "Slytherin",
@@ -533,114 +533,11 @@
       "hogwartsStaff": true,
       "actor": "Imelda Staunton",
       "comments": [
-        "HALF-BLOOD WITCH"
+        "HALF-BLOOD WITCH",
+        "LOVELY"
       ],
       "alive": true,
       "image": "https://ik.imagekit.io/hpapi/umbridge.jpg"
-    },
-    {
-      "id": "43403619-70cb-4a0c-b70a-6d5cae20e602",
-      "name": "Lucius Malfoy",
-      "likes": 0,
-      "species": "human",
-      "gender": "male",
-      "house": "Slytherin",
-      "dateOfBirth": "",
-      "yearOfBirth": 1954,
-      "wizard": true,
-      "ancestry": "pure-blood",
-      "eyeColour": "grey",
-      "hairColour": "blonde",
-      "wand": {
-        "wood": "elm",
-        "core": "dragon heartstring",
-        "length": 18
-      },
-      "patronus": "",
-      "hogwartsStudent": false,
-      "hogwartsStaff": false,
-      "actor": "Jason Isaacs",
-      "comments": [],
-      "alive": true,
-      "image": "https://ik.imagekit.io/hpapi/lucius.jpg"
-    },
-    {
-      "id": "04f9eb45-d843-4e29-a7d3-0bd49ed87f85",
-      "name": "Vincent Crabbe",
-      "likes": 0,
-      "species": "human",
-      "gender": "male",
-      "house": "Slytherin",
-      "dateOfBirth": "",
-      "yearOfBirth": null,
-      "wizard": true,
-      "ancestry": "pure-blood",
-      "eyeColour": "black",
-      "hairColour": "black",
-      "wand": {
-        "wood": "",
-        "core": "",
-        "length": null
-      },
-      "patronus": "",
-      "hogwartsStudent": true,
-      "hogwartsStaff": false,
-      "actor": "Jamie Waylett",
-      "comments": [],
-      "alive": false,
-      "image": "https://ik.imagekit.io/hpapi/crabbe.jpg"
-    },
-    {
-      "id": "a31ddc78-af12-4978-929c-3cc8a00a833e",
-      "name": "Gregory Goyle",
-      "likes": 0,
-      "species": "human",
-      "gender": "male",
-      "house": "Slytherin",
-      "dateOfBirth": "",
-      "yearOfBirth": null,
-      "wizard": true,
-      "ancestry": "pure-blood",
-      "eyeColour": "",
-      "hairColour": "brown",
-      "wand": {
-        "wood": "",
-        "core": "",
-        "length": null
-      },
-      "patronus": "",
-      "hogwartsStudent": true,
-      "hogwartsStaff": false,
-      "actor": "Josh Herdman",
-      "comments": [],
-      "alive": true,
-      "image": "https://ik.imagekit.io/hpapi/goyle.jpg"
-    },
-    {
-      "id": "b0620914-858d-46fc-8e6d-033c565e138b",
-      "name": "Mrs Norris",
-      "likes": 0,
-      "species": "cat",
-      "gender": "female",
-      "house": "",
-      "dateOfBirth": "",
-      "yearOfBirth": null,
-      "wizard": false,
-      "ancestry": "",
-      "eyeColour": "yellow",
-      "hairColour": "brown",
-      "wand": {
-        "wood": "",
-        "core": "",
-        "length": null
-      },
-      "patronus": "",
-      "hogwartsStudent": false,
-      "hogwartsStaff": true,
-      "actor": "Maxime, Alanis and Tommy the cats",
-      "comments": [],
-      "alive": true,
-      "image": "https://ik.imagekit.io/hpapi/norris.JPG"
     }
   ]
 }

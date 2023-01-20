@@ -38,6 +38,7 @@ function displayFirstItem(characterObj) {
 
 	let house = characterObj.house;
 	let body = document.querySelector("body");
+    
 	switch (house) {
 		case "Gryffindor":
 			body.style.backgroundColor = "#740001";
@@ -50,7 +51,7 @@ function displayFirstItem(characterObj) {
 		case "Hufflepuff":
 			body.style.backgroundColor = "#000";
 			nav.style.backgroundColor = "#FFD800";
-			break;
+            break;
 		case "Ravenclaw":
 			body.style.backgroundColor = "#0E1A40";
 			nav.style.backgroundColor = "#946B2D";
