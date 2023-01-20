@@ -11,14 +11,6 @@
       "yearOfBirth": 1980,
       "wizard": true,
       "ancestry": "half-blood",
-      "eyeColour": "green",
-      "hairColour": "black",
-      "wand": {
-        "wood": "holly",
-        "core": "phoenix feather",
-        "length": 11
-      },
-      "patronus": "stag",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Daniel Radcliffe",
@@ -45,14 +37,6 @@
       "yearOfBirth": 1979,
       "wizard": true,
       "ancestry": "muggleborn",
-      "eyeColour": "brown",
-      "hairColour": "brown",
-      "wand": {
-        "wood": "vine",
-        "core": "dragon heartstring",
-        "length": null
-      },
-      "patronus": "otter",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Emma Watson",
@@ -71,14 +55,6 @@
       "yearOfBirth": 1980,
       "wizard": true,
       "ancestry": "pure-blood",
-      "eyeColour": "blue",
-      "hairColour": "red",
-      "wand": {
-        "wood": "willow",
-        "core": "unicorn tail-hair",
-        "length": 14
-      },
-      "patronus": "Jack Russell terrier",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Rupert Grint",
@@ -97,14 +73,6 @@
       "yearOfBirth": 1980,
       "wizard": true,
       "ancestry": "pure-blood",
-      "eyeColour": "grey",
-      "hairColour": "blonde",
-      "wand": {
-        "wood": "hawthorn",
-        "core": "unicorn tail-hair",
-        "length": 10
-      },
-      "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Tom Felton",
@@ -123,14 +91,6 @@
       "yearOfBirth": 1925,
       "wizard": true,
       "ancestry": "",
-      "eyeColour": "",
-      "hairColour": "black",
-      "wand": {
-        "wood": "",
-        "core": "",
-        "length": null
-      },
-      "patronus": "tabby cat",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
       "actor": "Dame Maggie Smith",
@@ -149,14 +109,6 @@
       "yearOfBirth": 1977,
       "wizard": true,
       "ancestry": "",
-      "eyeColour": "grey",
-      "hairColour": "brown",
-      "wand": {
-        "wood": "ash",
-        "core": "unicorn hair",
-        "length": 12.25
-      },
-      "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Robert Pattinson",
@@ -174,15 +126,6 @@
       "dateOfBirth": "",
       "yearOfBirth": null,
       "wizard": true,
-      "ancestry": "",
-      "eyeColour": "brown",
-      "hairColour": "black",
-      "wand": {
-        "wood": "",
-        "core": "",
-        "length": null
-      },
-      "patronus": "swan",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Katie Leung",
@@ -201,14 +144,6 @@
       "yearOfBirth": 1960,
       "wizard": true,
       "ancestry": "half-blood",
-      "eyeColour": "black",
-      "hairColour": "black",
-      "wand": {
-        "wood": "",
-        "core": "",
-        "length": null
-      },
-      "patronus": "doe",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
       "actor": "Alan Rickman",
@@ -230,14 +165,6 @@
       "yearOfBirth": 1928,
       "wizard": true,
       "ancestry": "half-blood",
-      "eyeColour": "black",
-      "hairColour": "black",
-      "wand": {
-        "wood": "oak",
-        "core": "",
-        "length": 16
-      },
-      "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
       "actor": "Robbie Coltrane",
@@ -256,14 +183,6 @@
       "yearOfBirth": 1980,
       "wizard": true,
       "ancestry": "pure-blood",
-      "eyeColour": "",
-      "hairColour": "blonde",
-      "wand": {
-        "wood": "cherry",
-        "core": "unicorn tail-hair",
-        "length": 13
-      },
-      "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Matthew Lewis",
@@ -282,14 +201,6 @@
       "yearOfBirth": 1981,
       "wizard": true,
       "ancestry": "",
-      "eyeColour": "grey",
-      "hairColour": "blonde",
-      "wand": {
-        "wood": "",
-        "core": "",
-        "length": null
-      },
-      "patronus": "hare",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Evanna Lynch",
@@ -308,14 +219,6 @@
       "yearOfBirth": 1981,
       "wizard": true,
       "ancestry": "pure-blood",
-      "eyeColour": "brown",
-      "hairColour": "red",
-      "wand": {
-        "wood": "yew",
-        "core": "",
-        "length": null
-      },
-      "patronus": "horse",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Bonnie Wright",
@@ -334,14 +237,6 @@
       "yearOfBirth": 1959,
       "wizard": true,
       "ancestry": "pure-blood",
-      "eyeColour": "grey",
-      "hairColour": "black",
-      "wand": {
-        "wood": "",
-        "core": "",
-        "length": null
-      },
-      "patronus": "hare",
       "hogwartsStudent": false,
       "hogwartsStaff": false,
       "actor": "Gary Oldman",
@@ -362,14 +257,6 @@
       "yearOfBirth": 1960,
       "wizard": true,
       "ancestry": "half-blood",
-      "eyeColour": "green",
-      "hairColour": "brown",
-      "wand": {
-        "wood": "cypress",
-        "core": "unicorn tail-hair",
-        "length": 10.25
-      },
-      "patronus": "wolf",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
       "actor": "David Thewlis",
@@ -388,14 +275,6 @@
       "yearOfBirth": 1950,
       "wizard": true,
       "ancestry": "pure-blood",
-      "eyeColour": "blue",
-      "hairColour": "red",
-      "wand": {
-        "wood": "",
-        "core": "",
-        "length": null
-      },
-      "patronus": "weasel",
       "hogwartsStudent": false,
       "hogwartsStaff": false,
       "actor": "Mark Williams",
@@ -414,14 +293,6 @@
       "yearOfBirth": 1951,
       "wizard": true,
       "ancestry": "pure-blood",
-      "eyeColour": "brown",
-      "hairColour": "black",
-      "wand": {
-        "wood": "walnut",
-        "core": "dragon heartstring",
-        "length": 12.75
-      },
-      "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": false,
       "actor": "Helena Bonham Carter",
@@ -440,14 +311,6 @@
       "yearOfBirth": 1926,
       "wizard": true,
       "ancestry": "half-blood",
-      "eyeColour": "red",
-      "hairColour": "bald",
-      "wand": {
-        "wood": "yew",
-        "core": "phoenix feather",
-        "length": 13.5
-      },
-      "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": false,
       "actor": "Ralph Fiennes",
@@ -469,14 +332,6 @@
       "yearOfBirth": null,
       "wizard": true,
       "ancestry": "pure-blood",
-      "eyeColour": "green",
-      "hairColour": "blonde",
-      "wand": {
-        "wood": "cedar",
-        "core": "dragon heartstring",
-        "length": 10.25
-      },
-      "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
       "actor": "Jim Broadbent",
@@ -495,14 +350,6 @@
       "yearOfBirth": null,
       "wizard": true,
       "ancestry": "pure-blood",
-      "eyeColour": "brown",
-      "hairColour": "brown",
-      "wand": {
-        "wood": "",
-        "core": "",
-        "length": null
-      },
-      "patronus": "lynx",
       "hogwartsStudent": false,
       "hogwartsStaff": false,
       "actor": "George Harris",
@@ -513,7 +360,7 @@
     {
       "id": "d58e7249-19d1-40bd-a43f-1da0497fe8aa",
       "name": "Dolores Umbridge",
-      "likes": 11,
+      "likes": 13,
       "species": "human",
       "gender": "female",
       "house": "Slytherin",
@@ -521,14 +368,6 @@
       "yearOfBirth": null,
       "wizard": true,
       "ancestry": "half-blood",
-      "eyeColour": "brown",
-      "hairColour": "grey",
-      "wand": {
-        "wood": "birch",
-        "core": "dragon heartstring",
-        "length": 8
-      },
-      "patronus": "persian cat",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
       "actor": "Imelda Staunton",
