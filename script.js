@@ -1,5 +1,5 @@
 let nav = document.querySelector("#navbar");
-let url = "http://localhost:3000/characters";
+let url = "https://jsonkeeper.com/b/GA7N";
 //fetch data from the api
 fetch(url)
 	.then((res) => res.json())
